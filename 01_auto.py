@@ -24,15 +24,38 @@ VW Golf, Kilometerstand: 50300 km
 """
 
 # TODO: Erstelle hier die Klasse Auto
-
+class Auto:
+    def __init__(self, marke, model, kilometerstand):
+        self.marke= marke
+        self.model=model
+        self.kilometerstand= kilometerstand
+ 
+    def zeige_info(self):
+      print(f"{self.marke} hat kilometerstand {self.kilometerstand}")
+    
 
 # TODO: Erstelle ein Auto-Objekt (z.B. VW Golf mit 50000 km)
+auto_1=Auto("VW","Golf", 50000)
+auto_1.zeige_info()
 
+auto_2=Auto("Audi","A3", 400000)
+auto_2.zeige_info()
+
+auto_3=Auto("BMW", "XGMF 96 competition", 13)
+auto_3.zeige_info()
+
+      
 
 # TODO: Zeige die Info
 
 
-# TODO: Lass das Auto dreimal fahren
 
+
+# TODO: Lass das Auto dreimal fahren
+auto_1.fahren()
+auto_1.fahren()
+auto_2.fahren()
+auto_3.fahren()
 
 # TODO: Zeige die Info erneut
+auto_1.zeige_info()
